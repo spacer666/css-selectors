@@ -1,0 +1,79 @@
+/*** Simple CSS selectors ***/
+/* First task */
+.container + p, p + div{
+  color: #00f;
+}
+
+/* Second task */
+.container > *{
+  border: 1px solid green;
+}
+
+/* Third task */
+div.asteroid{
+  font-weight: bold;
+}
+
+/* Fourth task */
+p{
+  background: yellow;
+}
+
+/*** CSS pseudo-selectors ***/
+h1{
+  width: 50%;
+  text-align: center;
+}
+
+.container-2{
+  width: 50%;
+}
+
+.container-2 .box{
+  padding: 20px;
+  border: 1px solid #f00;
+}
+
+.container-2 .box:hover{
+  background: #800; /* maroon */
+  color:#deb887; /* burlywood */
+}
+
+/*** 20 boxes ***/
+.container-3{
+  display: flex;
+  flex-flow: column;
+  width: 700px;
+}
+
+.container-3 > *{
+  margin: 10px 0;
+  border: 1px solid #1e90ff; /* dodgerblue */
+}
+
+.container-3 .first-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+}
+
+.container-3 .first-row .tile{
+  width: 50px;
+  height: 50px;
+  background: #1e90ff;
+}
+
+.container-3 .second-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 10px;
+  background: #ff6347; /* tomato */
+}
+
+.container-3 .second-row .tile{
+  width: 50px;
+  height: 50px;
+  background: #800080; /* purple */
+}
